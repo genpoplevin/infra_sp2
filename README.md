@@ -20,7 +20,7 @@ DB_PORT=5432  # порт для подключения к БД
 Установите докер: https://www.docker.com/products/docker-desktop
 
 Соберите приложение:
-
+``````````````````````````````````````````````````````
 Из папки ifira в терминале выполните команду:
 docker-compose up -d --build
 
@@ -29,5 +29,5 @@ docker-compose exec web python manage.py migrate
 
 Заполните базу тестовыми данными:
 docker-compose exec web python manage.py loaddata fixtures.json
-
+``````````````````````````````````````````````````````
 Теперь приложение будет доступно в браузере по адресу localhost/
