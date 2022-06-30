@@ -30,4 +30,6 @@ docker-compose exec web python manage.py migrate
 Заполните базу тестовыми данными:
 docker-compose exec web python manage.py loaddata fixtures.json
 ``````````````````````````````````````````````````````
-Теперь приложение будет доступно в браузере по адресу localhost/
+Теперь приложение будет доступно в браузере по адресу localhost/admin/
+Логин: 79530088804@yandex.ru
+пароль: admin
