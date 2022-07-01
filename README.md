@@ -27,6 +27,9 @@ docker-compose up -d --build
 Выполните миграции:
 docker-compose exec web python manage.py migrate
 
+Загрузите статику:
+docker-compose exec web python manage.py collectstatic --no-input
+
 Заполните базу тестовыми данными:
 docker-compose exec web python manage.py loaddata fixtures.json
 ``````````````````````````````````````````````````````
